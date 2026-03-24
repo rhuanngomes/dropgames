@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DropGames – Melhores preços em jogos digitais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/contato.css">
+<link rel="stylesheet" href="../css/style.css"> 
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container">
+          <div class="logo">Drop<span>Games</span></div>
+    
+          <nav class="nav">
+            <a href="index.html" class="nav-active">Início</a>
+            <a href="pesquisa.html">Pesquisa</a>
+            <a href="projeto.html">Projeto</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="contato.html">Contato</a>
+          </nav>
+    
+          <div class="header-actions">
+            <button class="btn secundario">Entrar</button>
+            <button class="btn primario">Criar conta</button>
+          </div>
+        </div>
+      </header>
+
+    <main>
+
+        <section class="search-bar container" aria-label="Pesquisa e abas">
+            <div class="search-bar__input-wrap">
+                <svg class="search-bar__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+                <input type="search" placeholder="Pesquisar loja" aria-label="Pesquisar jogos na loja" />
+            </div>
+            <nav aria-label="Abas de navegação da loja">
+                <ul class="tabs">
+                    <li><a href="#" class="tab tab--active">Descobrir</a></li>
+                    <li><a href="#" class="tab">Navegar</a></li>
+                    <li><a href="#" class="tab">Novidades</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- HERO: section envolve TUDO (article + aside) -->
+        <section class="hero container" aria-label="Jogo em destaque">
+
+            <article class="hero__main">
+                <img src="../img/banner-rocket-league.jpg" alt="Rocket League – Nova Temporada" class="hero__bg"
+                    width="880" height="460" />
+                <div class="hero__overlay"></div>
+                <div class="hero__content">
+                    <h1 class="hero__title">Rocket League</h1>
+                    <p class="hero__badge">NOVA TEMPORADA</p>
+                    <p class="hero__desc">
+                        Uma nova temporada incrível se aproxima para quem ama os carros mais furiosos da galáxia.
+                        As nossas campanhas e partidas rankeadas agora são mais competitivas e divertidas!
+                    </p>
+                    <div class="hero__cta">
+                        <button class="btn btn--primary">Compare em 3 lojas</button>
+                        <button class="btn-icon btn-icon--outline" aria-label="Adicionar aos favoritos">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12
+                         5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06
+                         1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <aside class="hero__sidebar" aria-label="Outros jogos em destaque">
+                <ul>
+                    <li class="hero__mini-card">
+                        <img src="../img/mini-fortnite.jpg" alt="Fortnite" width="56" height="56" />
+                        <span>Salve o Mundo</span>
+                    </li>
+                    <li class="hero__mini-card">
+                        <img src="../img/mini-gta.jpg" alt="GTA 5" width="56" height="56" />
+                        <span>Mate todos</span>
+                    </li>
+                    <li class="hero__mini-card">
+                        <img src="../img/mini-nfs.jpg" alt="Need for Speed" width="56" height="56" />
+                        <span>Corra muito</span>
+                    </li>
+                    <li class="hero__mini-card hero__mini-card--active">
+                        <img src="../img/mini-rocket.jpg" alt="Rocket League" width="56" height="56" />
+                        <span>Marque gols</span>
+                    </li>
+                    <li class="hero__mini-card">
+                        <img src="../img/mini-rdr.jpg" alt="RDR 2" width="56" height="56" />
+                        <span>Deslize nas ruas</span>
+                    </li>
+                </ul>
+            </aside>
+
+        </section>
+        <!-- FIM DO HERO -->
+
+        <section class="games-section container" aria-labelledby="steam-titulo">
+            <div class="games-section__header">
+                <h2 id="steam-titulo" class="section-title">
+                    Melhores preços da Steam
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                </h2>
+                <div class="carousel-controls" role="group" aria-label="Navegar carrossel Steam">
+                    <button class="carousel-btn" aria-label="Anterior" id="steam-prev">&#8249;</button>
+                    <button class="carousel-btn" aria-label="Próximo" id="steam-next">&#8250;</button>
+                </div>
+            </div>
+            <ul class="games-grid" id="steam-grid">
+                <li class="game-card">
+                    <img src="../img/fifa22.jpg" alt="FIFA 22" class="game-card__cover" width="200" height="260" />
+                    <p class="game-card__store">Steam</p>
+                    <h3 class="game-card__title">FIFA 22</h3>
+                    <p class="game-card__price">R$ 79,90</p>
+                </li>
+                <li class="game-card">
+                    <img src="../img/gta5.jpg" alt="GTA 5" class="game-card__cover" width="200" height="260" />
+                    <p class="game-card__store">Steam</p>
+                    <h3 class="game-card__title">GTA 5
+                    </h3>
+                    <p class="game-card__price">R$ 79,90</p>
+                </li>
+                <li class="game-card">
+                    <img src="../img/rdr2.jpg" alt="Red Dead Redemption 2" class="game-card__cover" width="200"
+                        height="260" />
+                    <p class="game-card__store">Steam</p>
+                    <h3 class="game-card__title">RDR 2</h3>
+                    <p class="game-card__price">R$ 79,90</p>
+                </li>
+                <li class="game-card">
+                    <img src="../img/rocket.jpg" alt="Rocket League" class="game-card__cover" width="200" height="260" />
+                    <p class="game-card__store">Steam</p>
+                    <h3 class="game-card__title">Rocket League</h3>
+                    <p class="game-card__price">R$ 79,90</p>
+                </li>
+                <li class="game-card">
+                    <img src="../img/nfs.jpg" alt="Need For Speed" class="game-card__cover" width="200" height="260" />
+                    <p class="game-card__store">Steam</p>
+                    <h3 class="game-card__title">Need For Speed</h3>
+                    <p class="game-card__price">R$ 79,90</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="games-section container" aria-labelledby="origin-titulo">
+            <div class="games-section__header">
+                <h2 id="origin-titulo" class="section-title">
+                    Melhores preços da Origin
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                </h2>
+                <div class="carousel-controls" role="group" aria-label="Navegar carrossel Origin">
+                    <button class="carousel-btn" aria-label="Anterior" id="origin-prev">&#8249;</button>
+                    <button class="carousel-btn" aria-label="Próximo" id="origin-next">&#8250;</button>
+                </div>
+            </div>
+            <ul class="games-grid" id="origin-grid">
+                <li class="game-card">
+                    <img src="../img/hollow.jpg" alt="Hollow Knight" class="game-card__cover" width="200" height="260" />
+                    <p class="game-card__store">Origin</p>
+                    <h3 class="game-card__title">Hollow Knight</h3>
+                    <p class="game-card__price">R$ 79,90</p>
+                </li>
+                <li class="game-card">
+                    <img src="../img/assassin.jpg" alt="Assassin's Creed 3" class="game-card__cover" width="200"
+                        height="260" />
+                    <p class="game-card__store">Origin</p>
+                    <h3 class="game-card__title">Assassin's Creed 3</h3>
+                    <p class="game-card__price">R$ 79,90</p>
+                </li>
+                <li class="game-card">
+                    <img src="../img/spiderman.jpg" alt="Spider Man 2" class="game-card__cover" width="200" height="260" />
+                    <p class="game-card__store">Origin</p>
+                    <h3 class="game-card__title">Spider Man 2</h3>
+                    <p class="game-card__price">R$ 79,90</p>
+                </li>
+                <li class="game-card">
+                    <img src="../img/battlefield.jpg" alt="Battlefield 1" class="game-card__cover" width="200"
+                        height="260" />
+                    <p class="game-card__store">Origin</p>
+                    <h3 class="game-card__title">Battlefield 1</h3>
+                    <p class="game-card__price">R$ 79,90</p>
+                </li>
+                <li class="game-card">
+                    <img src="../img/re4.jpg" alt="Resident Evil 4" class="game-card__cover" width="200" height="260" />
+                    <p class="game-card__store">Origin</p>
+                    <h3 class="game-card__title">Resident Evil 4</h3>
+                    <p class="game-card__price">R$ 79,90</p>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top container">
+            <div class="footer__brand">
+                <a href="index.html" class="logo logo--footer" aria-label="DropGames – início">
+                    Drop<span>Games</span>
+                </a>
+                <div class="footer__social">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor" aria-hidden="true">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="X (Twitter)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor" aria-hidden="true">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817
+                       L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231z
+                       m-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor" aria-hidden="true">
+                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4
+                       s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12
+                       a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12
+                       20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0
+                       0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="footer__links" aria-label="Links do rodapé">
+                <div class="footer__col">
+                    <h3 class="footer__col-title">Jogos</h3>
+                    <ul>
+                        <li><a href="#">Fortnite</a></li>
+                        <li><a href="#">Fall Guys</a></li>
+                        <li><a href="#">Rocket League</a></li>
+                        <li><a href="#">Chess</a></li>
+                        <li><a href="#">Infinity Blade</a></li>
+                        <li><a href="#">Shadow Complex</a></li>
+                        <li><a href="#">Robo Recall</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__col-title">Lojas</h3>
+                    <ul>
+                        <li><a href="#">Epic Games Store</a></li>
+                        <li><a href="#">Steam</a></li>
+                        <li><a href="#">Origin</a></li>
+                        <li><a href="#">Sketchfab</a></li>
+                        <li><a href="#">ArtStation</a></li>
+                        <li><a href="#">EULA da Loja</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__col-title">Ferramentas</h3>
+                    <ul>
+                        <li><a href="#">Unreal Engine</a></li>
+                        <li><a href="#">UEFN</a></li>
+                        <li><a href="#">MetaHuman</a></li>
+                        <li><a href="#">Twinmotion</a></li>
+                        <li><a href="#">Megascans</a></li>
+                        <li><a href="#">RealityScan</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__col-title">Serviços Online</h3>
+                    <ul>
+                        <li><a href="#">Epic Online Services</a></li>
+                        <li><a href="#">Kids Web Services</a></li>
+                        <li><a href="#">Acordo de Serviços</a></li>
+                        <li><a href="#">Política de Uso</a></li>
+                        <li><a href="#">Declaração</a></li>
+                        <li><a href="#">Subprocessadores</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__col-title">Empresa</h3>
+                    <ul>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="#">Sala de Imprensa</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Alunos</a></li>
+                        <li><a href="#">Pesquisa de Usuário</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__col-title">Recursos</h3>
+                    <ul>
+                        <li><a href="#">Comunidade</a></li>
+                        <li><a href="#">MegaGrants</a></li>
+                        <li><a href="#">Apoie-um-criador</a></li>
+                        <li><a href="#">Acordo de Criador</a></li>
+                        <li><a href="#">Distribuir na Drop</a></li>
+                        <li><a href="#">Diretrizes de Marca</a></li>
+                        <li><a href="#">Política de Conteúdo</a></li>
+                        <li><a href="#">Regras da Comunidade</a></li>
+                        <li><a href="#">Regulamento</a></li>
+                        <li><a href="#">Suporte</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="footer__legal container">
+            <p>
+                © 2026, DropGames. Todos os direitos reservados. Epic, Epic Games, o logotipo da Epic Games,
+                Fortnite, o logotipo do Fortnite, Unreal, Unreal Engine, o logotipo da Unreal Engine,
+                Unreal Tournament e o logotipo do Unreal Tournament são marcas comerciais ou registradas da
+                Epic Games, Inc. nos Estados Unidos da América e em outros lugares.
+            </p>
+            <a href="#" class="btn btn--ghost footer__back-top">
+                Voltar ao topo
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="16 12 12 8 8 12" />
+                    <line x1="12" y1="16" x2="12" y2="8" />
+                </svg>
+            </a>
+        </div>
+
+        <div class="footer__bar container">
+            <ul>
+                <li><a href="#">Termos de Serviço</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Segurança e Proteção</a></li>
+                <li><a href="#">Política de Reembolso da Loja</a></li>
+                <li><a href="#">Índice de Editoras</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__credits container">
+            <p>Desenvolvido por <strong>Enzo Almeida</strong>, <strong>Leonardo Dias de Oliveira</strong>,
+                <strong>Rhuann Gomes dos Santos</strong> e <strong>Valentino Matos Carvalho</strong> &mdash; 2026
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobileNav');
+
+        hamburger.addEventListener('click', () => {
+            const isOpen = mobileNav.classList.toggle('mobile-nav--open');
+            hamburger.setAttribute('aria-expanded', isOpen);
+            mobileNav.setAttribute('aria-hidden', !isOpen);
+        });
+
+        document.querySelectorAll('.mobile-nav__link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('mobile-nav--open');
+                hamburger.setAttribute('aria-expanded', false);
+                mobileNav.setAttribute('aria-hidden', true);
+            });
+        });
+
+        document.querySelector('.footer__back-top').addEventListener('click', e => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+
+</html>

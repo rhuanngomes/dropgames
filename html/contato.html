@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>DropGames - Contato</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonte Inter (se puder usar Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/contato.css">
+
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">Drop<span>Games</span></div>
+
+      <nav class="nav">
+        <a href="index.html">Início</a>
+        <a href="pesquisa.html">Pesquisa</a>
+        <a href="projeto.html">Projeto</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contato.html" class="nav-active">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn secundario">Entrar</button>
+        <button class="btn primario">Criar conta</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-textos">
+          <p class="hero-legenda">Entre em contato conosco</p>
+          <h1 class="hero-titulo">Você pode falar com o nosso time agora mesmo</h1>
+        </div>
+
+        <div class="hero-imagem-wrapper">
+
+          <img src="../img/zelda.png" alt="Arte de jogo" class="hero-imagem">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contato">
+      <div class="contato-container">
+        <h2 class="contato-titulo">Preencha o formulário para entrar em contato com o nosso time</h2>
+
+        <form class="formulario" action="contato-sucesso.html" method="get">
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Inserir" required>
+          </div>
+
+          <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Inserir" required>
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Inserir" required>
+          </div>
+
+          <div class="campo">
+            <label for="jogo">Jogo de interesse</label>
+            <input type="text" id="jogo" name="jogo" placeholder="Inserir" required>
+          </div>
+
+          <button type="submit" class="btn primario btn-enviar">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">Drop<span>Games</span></div>
+      <p class="footer-texto">Projeto acadêmico – 2026 – Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
