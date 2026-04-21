@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie sua Conta - DropGames</title>
+    <link rel="stylesheet" href="../css/crie-conta.css">
+</head>
+<body>
+      <header class="header">
+    <div class="header-container">
+      <div class="logo">Drop<span>Games</span></div>
+
+      <nav class="nav">
+        <a href="index.html">Início</a>
+        <a href="pesquisa.html">Pesquisa</a>
+        <a href="projeto.html">Projeto</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contato.html" class="nav-active">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn secundario">Entrar</button>
+        <a href="crie-conta.html" class="btn primario">Criar conta</a>
+      </div>
+    </div>
+  </header>
+    <div class="container-layout">
+        <!-- Seção da imagem -->
+        <section class="secao-imagem">
+            <img src="../img/Kratos-screaming.jpg" alt="Imagem do Kratos gritando" class="imagem-kratos">
+        </section>
+
+        <!-- Seção do formulário -->
+        <section class="secao-formulario">
+            <div class="formulario-box">
+                <h1 class="titulo-formulario">Crie sua conta</h1>
+                <p class="subtitulo-formulario">E aproveite os melhores preços nos jogos</p>
+
+<form class="formulario" id="form-registro" novalidate>
+    <div class="campo">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+        <p class="campo-mensagem" id="nome-error" aria-live="polite"></p>
+    </div>
+
+    <div class="campo">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+        <p class="campo-mensagem" id="email-error" aria-live="polite"></p>
+    </div>
+
+    <div class="campo">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        <div class="senha-requisitos" id="senha-requisitos" style="display: none;">
+            <div class="senha-forca">
+                <span class="forca-label">Força da senha:</span>
+                <span class="forca-indicador" id="forca-indicador">
+                    <span class="forca-barra" id="forca-barra"></span>
+                </span>
+                <span class="forca-texto" id="forca-texto">Muito fraca</span>
+            </div>
+            <ul class="requisitos-lista" id="requisitos-lista">
+                <li class="requisito" id="req-comprimento">
+                    <span class="requisito-icone">✗</span>
+                    Pelo menos 8 caracteres
+                </li>
+                <li class="requisito" id="req-maiuscula">
+                    <span class="requisito-icone">✗</span>
+                    Uma letra maiúscula
+                </li>
+                <li class="requisito" id="req-minuscula">
+                    <span class="requisito-icone">✗</span>
+                    Uma letra minúscula
+                </li>
+                <li class="requisito" id="req-numero">
+                    <span class="requisito-icone">✗</span>
+                    Um número
+                </li>
+                <li class="requisito" id="req-especial">
+                    <span class="requisito-icone">✗</span>
+                    Um caractere especial (!@#$%^&*)
+                </li>
+            </ul>
+        </div>
+        <p class="campo-mensagem" id="senha-error" aria-live="polite"></p>
+    </div>
+
+    <button type="submit" class="btn-criar">Criar Conta</button>
+    <p class="campo-mensagem" id="sucesso-message" aria-live="polite" style="color: green; text-align: center;"></p>
+</form>
+            </div>
+        </section>
+    </div>
+    <script src="../js/Crie-conta.js"></script>
+</body>
+</html>

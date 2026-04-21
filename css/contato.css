@@ -205,6 +205,18 @@ body {
   border-color: var(--cor-amarelo);
 }
 
+.campo input.erro {
+  border-color: #FF6868;
+}
+
+.campo-mensagem {
+  margin: 4px 0 0;
+  color: #FF6868;
+  font-size: 13px;
+  line-height: 1.4;
+  min-height: 20px;
+}
+
 .btn-enviar {
   margin-top: 16px;
   align-self: flex-start;
