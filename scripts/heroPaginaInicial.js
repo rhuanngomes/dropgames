@@ -90,7 +90,7 @@ function iniciarIntervalo() {
 }
 
 function reiniciarIntervalo() {
-  cancelarIntervalo(intervaloAuto)
+  clearInterval(intervaloAuto)
   iniciarIntervalo()
 }
 

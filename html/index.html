@@ -27,7 +27,7 @@
 
         <div class="header-actions d-none d-lg-flex">
           <button class="btn secundario" type="button">Entrar</button>
-          <button class="btn primario" type="button">Criar conta</button>
+          <button class="btn primario" type="button" onclick="window.location.href='crie-conta.html'">Criar conta</button>
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@
       </ul>
       <div class="d-grid gap-2 mt-3">
         <button class="btn secundario" type="button">Entrar</button>
-        <button class="btn primario" type="button">Criar conta</button>
+        <button class="btn primario" type="button" onclick="window.location.href='crie-conta.html'">Criar conta</button>
       </div>
     </div>
   </div>
@@ -71,12 +71,12 @@
     <div class="row g-3 align-items-stretch hero-row">
       <div class="col-lg-9">
         <article class="hero__main h-100">
-          <img src="../img/banner-rocket-league.jpg" alt="Rocket League – Nova Temporada" class="hero__bg" width="880" height="460" />
+          <img src="../img/banner-rocket-league.jpg" alt="Rocket League – Nova Temporada" class="hero__bg" id="hero__bg" width="880" height="460" />
           <div class="hero__overlay"></div>
           <div class="hero__content">
-            <h1 class="hero__title">Rocket League</h1>
-            <p class="hero__badge">NOVA TEMPORADA</p>
-            <p class="hero__desc">Uma nova temporada incrível se aproxima para quem ama os carros mais furiosos da galáxia. As nossas campanhas e partidas rankeadas agora são mais competitivas e divertidas!</p>
+            <h1 class="hero__title" id="hero__title">Rocket League</h1>
+            <p class="hero__badge" id="hero__badge">NOVA TEMPORADA</p>
+            <p class="hero__desc" id="hero__desc">Uma nova temporada incrível se aproxima para quem ama os carros mais furiosos da galáxia. As nossas campanhas e partidas rankeadas agora são mais competitivas e divertidas!</p>
             <div class="hero__cta">
               <button class="btn btn--primary">Compare em 3 lojas</button>
               <button class="btn-icon btn-icon--outline" aria-label="Adicionar aos favoritos">
@@ -196,4 +196,5 @@
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../scripts/heroPaginaInicial.js"></script>
 </body></html>
