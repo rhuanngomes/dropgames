@@ -31,7 +31,7 @@
     
           <div class="header-actions">
             <button class="btn secundario">Entrar</button>
-            <button class="btn primario">Criar conta</button>
+            <a href="crie-conta.html" class="btn primario">Criar conta</a>
           </div>
         </div>
       </header>
@@ -366,24 +366,29 @@
         const hamburger = document.getElementById('hamburger');
         const mobileNav = document.getElementById('mobileNav');
 
-        hamburger.addEventListener('click', () => {
-            const isOpen = mobileNav.classList.toggle('mobile-nav--open');
-            hamburger.setAttribute('aria-expanded', isOpen);
-            mobileNav.setAttribute('aria-hidden', !isOpen);
-        });
-
-        document.querySelectorAll('.mobile-nav__link').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileNav.classList.remove('mobile-nav--open');
-                hamburger.setAttribute('aria-expanded', false);
-                mobileNav.setAttribute('aria-hidden', true);
+        if (hamburger && mobileNav) {
+            hamburger.addEventListener('click', () => {
+                const isOpen = mobileNav.classList.toggle('mobile-nav--open');
+                hamburger.setAttribute('aria-expanded', isOpen);
+                mobileNav.setAttribute('aria-hidden', !isOpen);
             });
-        });
 
-        document.querySelector('.footer__back-top').addEventListener('click', e => {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+            document.querySelectorAll('.mobile-nav__link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileNav.classList.remove('mobile-nav--open');
+                    hamburger.setAttribute('aria-expanded', false);
+                    mobileNav.setAttribute('aria-hidden', true);
+                });
+            });
+        }
+
+        const backTop = document.querySelector('.footer__back-top');
+        if (backTop) {
+            backTop.addEventListener('click', e => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
     </script>
 
 </body>
