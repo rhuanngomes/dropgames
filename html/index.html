@@ -31,7 +31,7 @@
     
           <div class="header-actions">
             <button class="btn secundario">Entrar</button>
-            <a href="crie-conta.html" class="btn primario">Criar conta</a>
+            <button class="btn primario">Criar conta</button>
           </div>
         </div>
       </header>
@@ -61,13 +61,13 @@
         <section class="hero container" aria-label="Jogo em destaque">
 
             <article class="hero__main">
-                <img src="../img/banner-rocket-league.jpg" alt="Rocket League – Nova Temporada" class="hero__bg"
+                <img src="../img/banner-rocket-league.jpg" alt="Rocket League – Nova Temporada" class="hero__bg" id="hero__bg"
                     width="880" height="460" />
                 <div class="hero__overlay"></div>
-                <div class="hero__content">
-                    <h1 class="hero__title">Rocket League</h1>
-                    <p class="hero__badge">NOVA TEMPORADA</p>
-                    <p class="hero__desc">
+                <div class="hero__content" id="hero__content">
+                    <h1 class="hero__title" id="hero__title">Rocket League</h1>
+                    <p class="hero__badge" id="hero__badge">NOVA TEMPORADA</p>
+                    <p class="hero__desc" id="hero__desc">
                         Uma nova temporada incrível se aproxima para quem ama os carros mais furiosos da galáxia.
                         As nossas campanhas e partidas rankeadas agora são mais competitivas e divertidas!
                     </p>
@@ -366,30 +366,27 @@
         const hamburger = document.getElementById('hamburger');
         const mobileNav = document.getElementById('mobileNav');
 
-        if (hamburger && mobileNav) {
-            hamburger.addEventListener('click', () => {
-                const isOpen = mobileNav.classList.toggle('mobile-nav--open');
-                hamburger.setAttribute('aria-expanded', isOpen);
-                mobileNav.setAttribute('aria-hidden', !isOpen);
-            });
+        hamburger.addEventListener('click', () => {
+            const isOpen = mobileNav.classList.toggle('mobile-nav--open');
+            hamburger.setAttribute('aria-expanded', isOpen);
+            mobileNav.setAttribute('aria-hidden', !isOpen);
+        });
 
-            document.querySelectorAll('.mobile-nav__link').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileNav.classList.remove('mobile-nav--open');
-                    hamburger.setAttribute('aria-expanded', false);
-                    mobileNav.setAttribute('aria-hidden', true);
-                });
+        document.querySelectorAll('.mobile-nav__link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('mobile-nav--open');
+                hamburger.setAttribute('aria-expanded', false);
+                mobileNav.setAttribute('aria-hidden', true);
             });
-        }
+        });
 
-        const backTop = document.querySelector('.footer__back-top');
-        if (backTop) {
-            backTop.addEventListener('click', e => {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        }
+        document.querySelector('.footer__back-top').addEventListener('click', e => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
     </script>
+
+    <script src="../scripts/heroPaginaInicial.js" defer></script>
 
 </body>
 

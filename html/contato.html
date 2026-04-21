@@ -28,7 +28,7 @@
 
       <div class="header-actions">
         <button class="btn secundario">Entrar</button>
-        <a href="crie-conta.html" class="btn primario">Criar conta</a>
+        <button class="btn primario">Criar conta</button>
       </div>
     </div>
   </header>
@@ -53,28 +53,29 @@
       <div class="contato-container">
         <h2 class="contato-titulo">Preencha o formulário para entrar em contato com o nosso time</h2>
 
-        <form class="formulario" action="contato-sucesso.html" method="get" novalidate>
+        <form class="formulario" action="contato-sucesso.html" method="get">
           <div class="campo">
             <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Inserir" required>
-            <p class="campo-mensagem" id="nome-error" aria-live="polite"></p>
+            <input type="text" id="nome" name="nome" placeholder="Inserir" required maxlength="55">
+            <p class="avisoDeInput" id="avisoDeInputNome">* Seu nome deve possuir algum caractere.</p>
           </div>
 
           <div class="campo">
             <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="(31) 99999-9999" inputmode="numeric" pattern="[0-9]*" required>
-            <p class="campo-mensagem" id="telefone-error" aria-live="polite"></p>
+            <input type="tel" id="telefone" name="telefone" placeholder="Inserir" pattern="[0-9]+" required maxlength="14">
+            <p class="avisoDeInput" id="avisoDeInputTelefone">* Insira um número válido.</p>
           </div>
 
           <div class="campo">
             <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="Inserir" required>
-            <p class="campo-mensagem" id="email-error" aria-live="polite"></p>
+            <input type="email" id="email" name="email" placeholder="Inserir" required maxlength="256">
+            <p class="avisoDeInput" id="avisoDeInputEmail">* Seu email deve possuir algum caractere.</p>
           </div>
-
+          
           <div class="campo">
             <label for="jogo">Jogo de interesse</label>
             <input type="text" id="jogo" name="jogo" placeholder="Inserir" required>
+            <p class="avisoDeInput" id="avisoDeInputInteresse">* É necessário inserir um assuto de interesse.</p>
           </div>
 
           <button type="submit" class="btn primario btn-enviar">Enviar</button>
@@ -89,6 +90,7 @@
       <p class="footer-texto">Projeto acadêmico – 2026 – Todos os direitos reservados.</p>
     </div>
   </footer>
-  <script src="../js/contato.js"></script>
+
+  <script src="../scripts/formulario.js" defer></script>
 </body>
 </html>
